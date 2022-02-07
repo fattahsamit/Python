@@ -2,12 +2,14 @@
 # If the score is out of range, print an error.
 # If the score is between 0.0 and 1.0, print a grade.
 
-score = float(input("Enter Score: "))
+try:
+    score = float(input("Enter Score: "))
 
-if(score > 1.0 or score < 0.0):
+except:
     print("Error, score out of range.")
+    quit()
 
-else:
+if(score < 1.0 or score > 0.0):
     if(score >= 0.9):
         print("A")
     elif(score >= 0.8):

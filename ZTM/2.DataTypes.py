@@ -28,3 +28,10 @@ print(5 % 4)
 
 print(9.9+1.1)
 print(type(9.9+1.1))
+
+# Optional bin() and complex
+complex
+print(bin(5))
+# 0b = binary
+# 5 = 101
+print(int('0b101', 2))
